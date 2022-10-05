@@ -1,13 +1,28 @@
+// library imports
+import { useState } from "react";
+
 // type imports
-import { TeamProps } from "../../../types/TeamTypes"
+import { TeamProps } from "src/types/TeamTypes"
+
+// component imports
 import Players from './Players'
 import Victories from './Victories'
 
+// style imports
+import '../../../styles/team.css'
+
+// state imports
+import TeamProvider from "../provider/teamProvider";
+
 const Team = ({children}: TeamProps) => {
+  const [count, setCount] = useState(0)
+
   return (
-    <div>
-      {children}
-    </div>
+    <TeamProvider value={{count, setCount}}>
+      <div className='team-container'>
+        {children}
+      </div>
+    </TeamProvider>
   )
 }
 

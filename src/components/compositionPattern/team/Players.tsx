@@ -1,10 +1,10 @@
-import { PlayersProps } from "../../../types/TeamTypes"
+import { PlayersProps } from "src/types/TeamTypes"
 
 const Players = ({playerName}: PlayersProps) => {
   return (
-    <div>
-      {playerName}
-    </div>
+    <p>
+      Players
+    </p>
   )
 }
 
