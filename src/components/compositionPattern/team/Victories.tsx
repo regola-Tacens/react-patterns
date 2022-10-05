@@ -9,8 +9,8 @@ const Victories = () => {
   
   const handleAddVictory = () => setCount(count => count + 1)
   return (
-    <div>
-      <span>{count} Victories</span>
+    <div className="team_victories">
+      <div>{count} Victories Component</div>
       <button onClick={handleAddVictory}>+</button>
     </div>
   )

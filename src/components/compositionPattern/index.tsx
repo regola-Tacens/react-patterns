@@ -8,6 +8,7 @@ return (
   <>
     <Team>
       <Team.Players playerName={playerName} />
+      <Team.Expenses />
       <Team.Victories />
     </Team>
   </>

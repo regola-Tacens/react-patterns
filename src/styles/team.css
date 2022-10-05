@@ -1,5 +1,11 @@
 .team-container {
-  border: 1px dotted black;
-  padding : 20px;
-  border-radius: 10%;
+  border: 2px solid rgb(20, 20, 20);
+  padding : 5px;
+  border-radius: 5px;
+}
+.team_expenses, .team_victories, .team_players {
+  margin: 10px;
+  padding: 10px;
+  background-color: rgb(54, 54, 54);
+  border-radius: 5px;
 }

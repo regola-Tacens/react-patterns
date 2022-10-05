@@ -1,7 +1,7 @@
 const Expenses = () => {
   console.log('exepenses')
   return (
-    <div>Expenses</div>
+    <div className="team_expenses">Expenses Component</div>
   )
 }
 
