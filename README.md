@@ -1,2 +1,6 @@
 # react-patterns
-### Compositin pattern
+### Composition pattern
+- useContext + useReducer
+
+### HOC pattern
+
