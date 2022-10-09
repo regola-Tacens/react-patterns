@@ -1,6 +1,5 @@
-import { PlayersProps } from "src/types/TeamTypes"
 
-const Players = ({playerName}: PlayersProps) => {
+const Players = () => {
   return (
     <div className="team_players">
       Players Components

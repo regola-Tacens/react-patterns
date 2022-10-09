@@ -3,15 +3,21 @@ import { useContext } from "react"
 
 // state imports
 import { TeamContext, teamProviderValue } from "../provider/teamProvider"
+import { teamTypes } from "../reducer/teamReducer"
 
 const Victories = () => {
-  const {count, setCount} = useContext<teamProviderValue>(TeamContext)
+  const {dispatch, teamState} = useContext<teamProviderValue>(TeamContext)
   
-  const handleAddVictory = () => setCount(count => count + 1)
+  const handleAddVictory = () => dispatch({type: teamTypes.ADD})
+  const handleRemoveVictory = () => {
+    teamState.count > 0 && dispatch({type: teamTypes.REMOVE})
+  }
+
   return (
     <div className="team_victories">
-      <div>{count} Victories Component</div>
+      <div>{teamState.count} Victories Component</div>
       <button onClick={handleAddVictory}>+</button>
+      <button onClick={handleRemoveVictory}>-</button>
     </div>
   )
 }
