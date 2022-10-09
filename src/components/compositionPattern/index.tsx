@@ -1,7 +1,6 @@
 import Team from "./team/Team"
 
 const CompositionPattern = () => {
-
 return (
     <Team>
       <Team.Players />
