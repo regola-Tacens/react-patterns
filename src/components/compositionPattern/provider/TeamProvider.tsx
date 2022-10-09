@@ -4,12 +4,13 @@ import { createContext, Dispatch } from "react"
 // type imports
 import { TeamStateType, TeamActionType } from "../reducer/teamReducer"
 
-export const TeamContext = createContext<any>(null)
+export const TeamContext = createContext<teamProviderValue | null>(null)
 
 export type teamProviderValue = {
   teamState: TeamStateType,
   dispatch: React.Dispatch<TeamActionType>
 }
+
 type TeamProviderProps = {
   children: React.ReactNode,
   value: teamProviderValue
